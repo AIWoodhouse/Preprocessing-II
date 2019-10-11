@@ -1,1 +1,22 @@
 // Mixins in here
+
+//Parametric Mixin
+.button(@size, @radius, @width) {
+    background-color: @button-bg;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: @size; //16
+    border-radius: @radius; //12
+    width: @width; //90%
+    align-content: center;
+  }
+
+// Mobile View
+.mobileFlex() {
+    display: flex;
+    flex-direction: column;
+}
